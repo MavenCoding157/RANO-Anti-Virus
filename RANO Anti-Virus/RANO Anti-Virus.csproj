@@ -38,6 +38,9 @@
   <PropertyGroup>
     <ApplicationIcon>269170.ico</ApplicationIcon>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="AntiVirusScanner, Version=1.0.2.0, Culture=neutral, PublicKeyToken=4eca7785562da9b9, processorArchitecture=MSIL">
       <HintPath>..\packages\AntiVirusScanner.1.0.2\lib\net35\AntiVirusScanner.dll</HintPath>
@@ -291,6 +294,7 @@
     <EmbeddedResource Include="System.resx">
       <DependentUpon>System.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="app.manifest" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

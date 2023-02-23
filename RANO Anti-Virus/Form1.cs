@@ -43,7 +43,7 @@ namespace RANO_Anti_Virus
             if (dialogResult == DialogResult.Yes)
             {
                 Application.Exit();
-                notifyIcon1.BalloonTipText = ("Goodbye. See you soon.");
+                notifyIcon1.BalloonTipText = ("Goodbye. See you soon " + Environment.UserName + "");
                 notifyIcon1.ShowBalloonTip(1000);
 
             }
@@ -96,7 +96,7 @@ namespace RANO_Anti_Virus
 
             Location = Screen.AllScreens[0].WorkingArea.Location;
 
-            notifyIcon1.BalloonTipText = ("Welcome to RANO Anti-Virus");
+            notifyIcon1.BalloonTipText = ("Welcome " + Environment.UserName + " to the RANO Anti-Virus");
             notifyIcon1.ShowBalloonTip(1000);
 
         }
