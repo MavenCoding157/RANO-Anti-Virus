@@ -113,6 +113,26 @@ namespace RANO_Anti_Virus.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap download__2_ {
+            get {
+                object obj = ResourceManager.GetObject("download (2)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap download34 {
+            get {
+                object obj = ResourceManager.GetObject("download34", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Hamburger_icon_svg {
             get {
                 object obj = ResourceManager.GetObject("Hamburger_icon.svg", resourceCulture);
@@ -126,6 +146,16 @@ namespace RANO_Anti_Virus.Properties {
         internal static System.Drawing.Bitmap Ic_settings_48px_svg {
             get {
                 object obj = ResourceManager.GetObject("Ic_settings_48px.svg", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap minimize_icon {
+            get {
+                object obj = ResourceManager.GetObject("minimize icon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

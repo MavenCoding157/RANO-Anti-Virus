@@ -1,4 +1,5 @@
-﻿using System;
+﻿using RestSharp;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,29 +17,12 @@ namespace RANO_Anti_Virus
         public System_Information()
         {
             InitializeComponent();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            DialogResult dialogResult = MessageBox.Show("Are you sure you want to exit the RANO Anti-Virus?", "See you soon", MessageBoxButtons.YesNo);
-            if (dialogResult == DialogResult.Yes)
-            {
-                Application.Exit();
-            }
-            else if (dialogResult == DialogResult.No)
-            {
-                //nothing
-            }
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            this.WindowState = FormWindowState.Minimized;
+            SystemInfo();
         }
 
         private void System_Information_Load(object sender, EventArgs e)
         {
-            
+            this.MaximizeBox = false;
         }
         
         private string GetOsName(OperatingSystem os_info)
@@ -58,6 +42,27 @@ namespace RANO_Anti_Virus
                 case "5.0": return "2000";
             }
             return "Unknown";
+        }
+        private void SystemInfo()
+        {
+            OperatingSystem os_info = System.Environment.OSVersion;
+
+            String info1 = Environment.MachineName; // Computer name
+            label1.Text = info1;
+
+            String info2 = Environment.UserName; // username
+            label2.Text = Convert.ToString(info2);
+
+            String info3 = Environment.OSVersion.ToString(); // version
+            label3.Text = info3;
+
+            bool info5 = Environment.Is64BitProcess; // 64 Bit Process
+            label6.Text = Convert.ToString(info5);
+
+            String info6 = Environment.OSVersion.Platform.ToString(); // System Platform
+            label7.Text = info6;
+
+            label8.Text = GetOsName(os_info); // OS Name
         }
     }
 }

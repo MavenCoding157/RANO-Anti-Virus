@@ -17,22 +17,9 @@ namespace RANO_Anti_Virus
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void About_Load(object sender, EventArgs e)
         {
-            DialogResult dialogResult = MessageBox.Show("Are you sure you want to exit the RANO Anti-Virus?", "See you soon", MessageBoxButtons.YesNo);
-            if (dialogResult == DialogResult.Yes)
-            {
-                Application.Exit();
-            }
-            else if (dialogResult == DialogResult.No)
-            {
-                //nothing
-            }
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            this.WindowState = FormWindowState.Minimized;
+            this.MaximizeBox = false;
         }
     }
 }

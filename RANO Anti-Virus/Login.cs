@@ -12,6 +12,11 @@ namespace RANO_Anti_Virus
 {
     public partial class Login : Form
     {
+        //move form
+        int mov;
+        int movX;
+        int movY;
+
         public Login()
         {
             InitializeComponent();
@@ -54,7 +59,34 @@ namespace RANO_Anti_Virus
 
         private void Login_Load(object sender, EventArgs e)
         {
-            MessageBox.Show("WARNING! This is software is still in BETA so do not use as main Anti-Virus. \nAlso make sure to run this software with admin permissions.", "Hello", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show("WARNING! This is software is still in BETA so do not use as main Anti-Virus. \nAlso make sure to run this software with admin permissions.", "RANO Anti-Virus", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            Location = Screen.AllScreens[0].WorkingArea.Location;
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel1_MouseDown(object sender, MouseEventArgs e)
+        {
+            mov = 1;
+            movX = e.X;
+            movY = e.Y;
+        }
+
+        private void panel1_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (mov == 1)
+            {
+                this.SetDesktopLocation(MousePosition.X - movX, MousePosition.Y - movY);
+            }
+        }
+
+        private void panel1_MouseUP(object sender, MouseEventArgs e)
+        {
+            mov = 0;
         }
     }
 }

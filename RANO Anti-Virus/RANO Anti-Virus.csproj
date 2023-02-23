@@ -42,15 +42,6 @@
     <Reference Include="AntiVirusScanner, Version=1.0.2.0, Culture=neutral, PublicKeyToken=4eca7785562da9b9, processorArchitecture=MSIL">
       <HintPath>..\packages\AntiVirusScanner.1.0.2\lib\net35\AntiVirusScanner.dll</HintPath>
     </Reference>
-    <Reference Include="Bunifu.Licensing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=f89b4760ba7dcb6b, processorArchitecture=MSIL">
-      <HintPath>..\packages\Bunifu.Licensing.5.0.0\lib\net40\Bunifu.Licensing.dll</HintPath>
-    </Reference>
-    <Reference Include="Bunifu.UI.WinForms, Version=0.0.0.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
-      <HintPath>..\packages\Bunifu.UI.WinForms.6.0.2\lib\net40\Bunifu.UI.WinForms.dll</HintPath>
-    </Reference>
-    <Reference Include="Bunifu.UI.WinForms.1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
-      <HintPath>..\packages\Bunifu.UI.WinForms.1.5.3.1.0.0\lib\net40\Bunifu.UI.WinForms.1.5.3.dll</HintPath>
-    </Reference>
     <Reference Include="Costura, Version=3.3.3.0, Culture=neutral, PublicKeyToken=9919ef960d84173d, processorArchitecture=MSIL">
       <HintPath>..\packages\Costura.Fody.3.3.3\lib\net40\Costura.dll</HintPath>
     </Reference>
@@ -240,11 +231,23 @@
     <Compile Include="About.Designer.cs">
       <DependentUpon>About.cs</DependentUpon>
     </Compile>
+    <Compile Include="Encryption.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Encryption.Designer.cs">
+      <DependentUpon>Encryption.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Links.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Links.Designer.cs">
+      <DependentUpon>Links.cs</DependentUpon>
     </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -263,8 +266,14 @@
     <EmbeddedResource Include="About.resx">
       <DependentUpon>About.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Encryption.resx">
+      <DependentUpon>Encryption.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Links.resx">
+      <DependentUpon>Links.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
@@ -319,6 +328,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="269170.ico" />
+    <None Include="Resources\minimize icon.png" />
+    <None Include="Resources\download %282%29.png" />
+    <None Include="Resources\download34.png" />
     <None Include="Resources\Question_Mark.svg.png" />
     <None Include="Resources\3dgifmaker28517.gif" />
   </ItemGroup>

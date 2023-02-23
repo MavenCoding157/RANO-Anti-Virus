@@ -11,8 +11,6 @@ C:\Users\PC\Desktop\Anti-Virus\RANO Anti-Virus\RANO Anti-Virus\obj\Release\RANO 
 C:\Users\PC\Desktop\Anti-Virus\RANO Anti-Virus\RANO Anti-Virus\obj\Release\RANO Anti-Virus.csproj.CopyComplete
 C:\Users\PC\Desktop\Anti-Virus\RANO Anti-Virus\RANO Anti-Virus\obj\Release\RANO Anti-Virus.exe
 C:\Users\PC\Desktop\Anti-Virus\RANO Anti-Virus\RANO Anti-Virus\obj\Release\RANO Anti-Virus.pdb
-C:\Users\PC\Desktop\Anti-Virus\RANO Anti-Virus\RANO Anti-Virus\bin\Release\Bunifu.UI.WinForms.xml
-C:\Users\PC\Desktop\Anti-Virus\RANO Anti-Virus\RANO Anti-Virus\bin\Release\Bunifu.UI.WinForms.1.5.3.xml
 C:\Users\PC\Desktop\Anti-Virus\RANO Anti-Virus\RANO Anti-Virus\bin\Release\DotRas.xml
 C:\Users\PC\Desktop\Anti-Virus\RANO Anti-Virus\RANO Anti-Virus\bin\Release\Microsoft.Win32.Registry.xml
 C:\Users\PC\Desktop\Anti-Virus\RANO Anti-Virus\RANO Anti-Virus\bin\Release\Microsoft.Win32.Registry.AccessControl.xml
@@ -49,3 +47,5 @@ C:\Users\PC\Desktop\Anti-Virus\RANO Anti-Virus\RANO Anti-Virus\obj\Release\RANO_
 C:\Users\PC\Desktop\Anti-Virus\RANO Anti-Virus\RANO Anti-Virus\obj\Release\RANO_Anti_Virus.Login.resources
 C:\Users\PC\Desktop\Anti-Virus\RANO Anti-Virus\RANO Anti-Virus\obj\Release\RANO_Anti_Virus.System_Information.resources
 C:\Users\PC\Desktop\Anti-Virus\RANO Anti-Virus\RANO Anti-Virus\obj\Release\RANO Anti-Virus.csproj.Fody.CopyLocal.cache
+C:\Users\PC\Desktop\Anti-Virus\RANO Anti-Virus\RANO Anti-Virus\obj\Release\RANO_Anti_Virus.Encryption.resources
+C:\Users\PC\Desktop\Anti-Virus\RANO Anti-Virus\RANO Anti-Virus\obj\Release\RANO_Anti_Virus.Links.resources

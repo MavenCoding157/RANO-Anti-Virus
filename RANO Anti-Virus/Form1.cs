@@ -7,7 +7,9 @@ using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Net;
+using System.Net.Http;
 using System.Runtime.InteropServices;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Web.Services.Description;
@@ -22,6 +24,14 @@ namespace RANO_Anti_Virus
         bool sidebarExpand;
         bool homeCollapsed;
 
+        //move form
+        int mov;
+        int movX;
+        int movY;
+
+        string CurrentVersion = "0.1"; 
+
+
         public Form1()
         {
             InitializeComponent();
@@ -29,10 +39,13 @@ namespace RANO_Anti_Virus
 
         private void button1_Click(object sender, EventArgs e)
         {
-            DialogResult dialogResult = MessageBox.Show("Are you sure you want to exit the RANO Anti-Virus?", "See you soon", MessageBoxButtons.YesNo);
+            DialogResult dialogResult = MessageBox.Show("Are you sure you want to exit the RANO Anti-Virus?", "RANO Anti Virus", MessageBoxButtons.YesNo);
             if (dialogResult == DialogResult.Yes)
             {
                 Application.Exit();
+                notifyIcon1.BalloonTipText = ("Goodbye. See you soon.");
+                notifyIcon1.ShowBalloonTip(1000);
+
             }
             else if (dialogResult == DialogResult.No)
             {
@@ -43,6 +56,9 @@ namespace RANO_Anti_Virus
         private void button2_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
+
+            notifyIcon1.BalloonTipText = ("RANO Anti-Virus has been minimized");
+            notifyIcon1.ShowBalloonTip(1000);
         }
         
 
@@ -77,7 +93,12 @@ namespace RANO_Anti_Virus
         {
             notifyIcon1.Visible = true;
             notifyIcon1.Text = "RANO Anti-Virus";
-            
+
+            Location = Screen.AllScreens[0].WorkingArea.Location;
+
+            notifyIcon1.BalloonTipText = ("Welcome to RANO Anti-Virus");
+            notifyIcon1.ShowBalloonTip(1000);
+
         }
 
         private void stopandstart_Tick(object sender, EventArgs e)
@@ -126,12 +147,14 @@ namespace RANO_Anti_Virus
 
         private void guna2Button2_Click(object sender, EventArgs e)
         {
-            System.Diagnostics.Process.Start("https://www.youtube.com/channel/UCkP2YjZfvZIfArYbAUyRLsg");
+            Form f = new Links();
+            DialogResult res = f.ShowDialog();
         }
 
         private void guna2Button3_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Coming soon...");
+            Form f = new System_Information();
+            DialogResult res = f.ShowDialog();
         }
 
         private void guna2Button4_Click(object sender, EventArgs e)
@@ -166,6 +189,7 @@ namespace RANO_Anti_Virus
 
         private void guna2Button9_Click(object sender, EventArgs e)
         {
+            MessageBox.Show("If there is an error just press ok \nThe tool has worked just a slight bug in the code.");
             var username = System.Environment.GetEnvironmentVariable("USERNAME");
             System.IO.Directory.Delete("C:\\Users\\" + username + "\\AppData\\Local\\Temp", true);
             MessageBox.Show("System cleaned.", "Cleaned", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -178,19 +202,60 @@ namespace RANO_Anti_Virus
             DialogResult res = f.ShowDialog();
         }
 
-        private void guna2Button10_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Coming soon...", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-        }
-
-        private void guna2Button11_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Coming soon...", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-        }
-
         private void guna2Button12_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Anti-Virus up to date.", "Update", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            WebClient client = new WebClient();
+            string version = client.DownloadString("https://raw.githubusercontent.com/MavenCoding157/RANO-Anti-Virus/main/Version.txt");
+            if (version.Contains(CurrentVersion))
+            {
+                MessageBox.Show("RANO Anti-Virus is up to date", "Update", MessageBoxButtons.OK);
+            }
+            else
+            {
+                MessageBox.Show("Please update to a newer version.", "Update", MessageBoxButtons.OK);
+                System.Diagnostics.Process.Start("https://github.com/MavenCoding157/RANO-Anti-Virus");
+            }
+        }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel1_MouseDown(object sender, MouseEventArgs e)
+        {
+            mov = 1;
+            movX = e.X;
+            movY = e.Y;
+        }
+
+        private void panel1_mouseMove(object sender, MouseEventArgs e)
+        {
+            if(mov == 1)
+            {
+                this.SetDesktopLocation(MousePosition.X - movX, MousePosition.Y - movY);
+            }
+        }
+
+        private void panel1_MouseUP(object sender, MouseEventArgs e)
+        {
+            mov = 0;
+        }
+
+        private void panel4_Paint(object sender, PaintEventArgs e)
+        {
+            panel4.SendToBack();
+        }
+
+        private void guna2Button13_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("RANO Anti-Virus is a basic Anti-Virus made with c# by MavenCoding157. This project is still currently in BETA \nso expect frequent updates.", "About", MessageBoxButtons.OK);
+        }
+
+        private void guna2Button10_Click(object sender, EventArgs e)
+        {
+            Form f = new Encryption();
+            DialogResult res = f.ShowDialog();
         }
     }
 }
