@@ -12,7 +12,7 @@ This project took me about 4 hours to make but is my favourite project i have ma
 You can either run the file by building it yourself or the easier method would be to run the exe file called 'RANO Anti-Virus' inside of either the debug or release file.
 
 # **IMPORTANT**
-This is very early BETA for this Anti-Virus so if there is not many options or some sort of bug it will be fix swiftly and ASAP.
+This is very early BETA for this Anti-Virus so if there is not many options or some sort of bug it will be fixed swiftly and ASAP.
 
 # **VIDEOS**
 
