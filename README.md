@@ -14,6 +14,10 @@ You can either run the file by building it yourself or the easier method would b
 # **IMPORTANT**
 This is very early BETA for this Anti-Virus so if there is not many options or some sort of bug it will be fixed swiftly and ASAP.
 
+#**LOGIN**
+Username: admin
+Password: admin
+
 # **VIDEOS**
 
 https://user-images.githubusercontent.com/117538886/220988246-4d5c7bcf-491c-44fb-8920-649dc7cd5ea9.mp4
