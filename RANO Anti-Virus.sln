@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33205.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RANO Anti-Virus", "RANO Anti-Virus\RANO Anti-Virus.csproj", "{1BD85D46-9F17-492C-8986-9A1E0FAB9E1F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1BD85D46-9F17-492C-8986-9A1E0FAB9E1F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1BD85D46-9F17-492C-8986-9A1E0FAB9E1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1BD85D46-9F17-492C-8986-9A1E0FAB9E1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1BD85D46-9F17-492C-8986-9A1E0FAB9E1F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {965F4AB7-50EA-47C5-B39B-BF3CF08382A5}
+	EndGlobalSection
+EndGlobal
