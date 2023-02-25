@@ -298,5 +298,18 @@ namespace RANO_Anti_Virus
             notifyIcon1.Visible = false;
             WindowState = FormWindowState.Normal;
         }
+
+        private void browseToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            using (FileDialog fileDialog = new OpenFileDialog())
+            {
+                if (DialogResult.OK == fileDialog.ShowDialog())
+                {
+                    string filename = fileDialog.FileName;
+
+                    textBox1.Text = fileDialog.FileName;
+                }
+            }
+        }
     }
 }

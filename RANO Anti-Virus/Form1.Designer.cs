@@ -72,6 +72,9 @@
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.guna2Button10 = new Guna.UI2.WinForms.Guna2Button();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.browseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.flowLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -81,6 +84,7 @@
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -99,7 +103,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(314, 244);
+            this.label2.Location = new System.Drawing.Point(308, 244);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(171, 30);
             this.label2.TabIndex = 5;
@@ -109,11 +113,11 @@
             // 
             this.textBox1.BackColor = System.Drawing.Color.DarkSlateGray;
             this.textBox1.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.Color.White;
-            this.textBox1.Location = new System.Drawing.Point(542, 338);
+            this.textBox1.ForeColor = System.Drawing.Color.Black;
+            this.textBox1.Location = new System.Drawing.Point(536, 382);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(131, 157);
+            this.textBox1.Size = new System.Drawing.Size(131, 113);
             this.textBox1.TabIndex = 8;
             // 
             // label3
@@ -121,11 +125,11 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(542, 299);
+            this.label3.Location = new System.Drawing.Point(536, 299);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(131, 25);
+            this.label3.Size = new System.Drawing.Size(136, 25);
             this.label3.TabIndex = 9;
-            this.label3.Text = "Enter filepath";
+            this.label3.Text = "Select filepath";
             // 
             // label4
             // 
@@ -432,7 +436,7 @@
             this.guna2Button8.FillColor = System.Drawing.Color.SpringGreen;
             this.guna2Button8.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button8.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button8.Location = new System.Drawing.Point(390, 299);
+            this.guna2Button8.Location = new System.Drawing.Point(384, 299);
             this.guna2Button8.Name = "guna2Button8";
             this.guna2Button8.Size = new System.Drawing.Size(146, 196);
             this.guna2Button8.TabIndex = 16;
@@ -449,7 +453,7 @@
             this.guna2Button9.FillColor = System.Drawing.Color.SpringGreen;
             this.guna2Button9.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button9.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button9.Location = new System.Drawing.Point(238, 299);
+            this.guna2Button9.Location = new System.Drawing.Point(232, 299);
             this.guna2Button9.Name = "guna2Button9";
             this.guna2Button9.Size = new System.Drawing.Size(146, 196);
             this.guna2Button9.TabIndex = 17;
@@ -461,7 +465,7 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.SpringGreen;
-            this.label8.Location = new System.Drawing.Point(261, 501);
+            this.label8.Location = new System.Drawing.Point(255, 501);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(166, 30);
             this.label8.TabIndex = 18;
@@ -598,7 +602,7 @@
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.White;
-            this.label13.Location = new System.Drawing.Point(721, 254);
+            this.label13.Location = new System.Drawing.Point(730, 254);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(107, 30);
             this.label13.TabIndex = 34;
@@ -614,12 +618,38 @@
             this.guna2Button10.FillColor = System.Drawing.Color.SpringGreen;
             this.guna2Button10.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button10.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button10.Location = new System.Drawing.Point(701, 299);
+            this.guna2Button10.Location = new System.Drawing.Point(710, 299);
             this.guna2Button10.Name = "guna2Button10";
             this.guna2Button10.Size = new System.Drawing.Size(146, 196);
             this.guna2Button10.TabIndex = 35;
             this.guna2Button10.Text = "Encrypter Tool";
             this.guna2Button10.Click += new System.EventHandler(this.guna2Button10_Click);
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Dock = System.Windows.Forms.DockStyle.None;
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.fileToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(570, 324);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(43, 24);
+            this.menuStrip1.TabIndex = 36;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // fileToolStripMenuItem
+            // 
+            this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.browseToolStripMenuItem});
+            this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(35, 20);
+            this.fileToolStripMenuItem.Text = "file";
+            // 
+            // browseToolStripMenuItem
+            // 
+            this.browseToolStripMenuItem.Name = "browseToolStripMenuItem";
+            this.browseToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.browseToolStripMenuItem.Text = "browse";
+            this.browseToolStripMenuItem.Click += new System.EventHandler(this.browseToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -628,6 +658,7 @@
             this.BackColor = System.Drawing.Color.DarkSlateGray;
             this.ClientSize = new System.Drawing.Size(1066, 540);
             this.ControlBox = false;
+            this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.guna2Button10);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label12);
@@ -663,6 +694,8 @@
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -712,6 +745,9 @@
         private Guna.UI2.WinForms.Guna2Button guna2Button10;
         private System.Windows.Forms.Label label9;
         private Guna.UI2.WinForms.Guna2Button guna2Button6;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem browseToolStripMenuItem;
     }
 }
 
