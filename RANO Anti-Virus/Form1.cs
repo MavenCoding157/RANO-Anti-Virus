@@ -29,12 +29,24 @@ namespace RANO_Anti_Virus
         int movX;
         int movY;
 
-        string CurrentVersion = "0.1"; 
+        string CurrentVersion = "0.1";
+        private ContextMenu m_menu;
 
+        //round corner (ddl's)
+        [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
+        private static extern IntPtr CreateRoundRectRgn
+        (
+            int nLeftRect,     // x-coordinate of upper-left corner
+            int nTopRect,      // y-coordinate of upper-left corner
+            int nRightRect,    // x-coordinate of lower-right corner
+            int nBottomRect,   // y-coordinate of lower-right corner
+            int nWidthEllipse, // width of ellipse
+            int nHeightEllipse); // height of ellipse
 
         public Form1()
         {
             InitializeComponent();
+            m_menuLoad();//loads menu sys tray
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -98,6 +110,11 @@ namespace RANO_Anti_Virus
 
             notifyIcon1.BalloonTipText = ("Welcome " + Environment.UserName + " to the RANO Anti-Virus");
             notifyIcon1.ShowBalloonTip(1000);
+
+            label9.Text = "User: " + Environment.UserName + "";
+
+            this.FormBorderStyle = FormBorderStyle.None;
+            Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20));//round corners
 
         }
 
@@ -164,12 +181,7 @@ namespace RANO_Anti_Virus
 
         private void guna2Button5_Click(object sender, EventArgs e)
         {
-            this.BackColor = Color.Navy;
-        }
-
-        private void guna2Button6_Click(object sender, EventArgs e)
-        {
-            this.BackColor = Color.Gray;
+            this.BackColor = Color.Blue;
         }
 
         private void guna2Button7_Click(object sender, EventArgs e)
@@ -256,6 +268,35 @@ namespace RANO_Anti_Virus
         {
             Form f = new Encryption();
             DialogResult res = f.ShowDialog();
+        }
+
+        private void guna2Button6_Click(object sender, EventArgs e)
+        {
+            Form f = new Userinfo();
+            DialogResult res = f.ShowDialog();
+        }
+        private void m_menuLoad()
+        {
+            m_menu = new ContextMenu();
+            m_menu.MenuItems.Add(0,
+                new MenuItem("Show", new System.EventHandler(Show_Click)));
+            m_menu.MenuItems.Add(1,
+                new MenuItem("Exit", new System.EventHandler(Exit_Click)));
+        }
+
+        private void notifyIcon1_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            notifyIcon1.ContextMenu = m_menu;
+        }
+        protected void Exit_Click(Object sender, System.EventArgs e)
+        {
+            Close();
+        }
+        protected void Show_Click(Object sender, System.EventArgs e)
+        {
+            ShowInTaskbar = true;
+            notifyIcon1.Visible = false;
+            WindowState = FormWindowState.Normal;
         }
     }
 }

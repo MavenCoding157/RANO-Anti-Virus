@@ -49,3 +49,4 @@ C:\Users\PC\Desktop\Anti-Virus\RANO Anti-Virus\RANO Anti-Virus\bin\Debug\System.
 C:\Users\PC\Desktop\Anti-Virus\RANO Anti-Virus\RANO Anti-Virus\obj\Debug\RANO Anti-Virus.csproj.Fody.CopyLocal.cache
 C:\Users\PC\Desktop\Anti-Virus\RANO Anti-Virus\RANO Anti-Virus\obj\Debug\RANO_Anti_Virus.Links.resources
 C:\Users\PC\Desktop\Anti-Virus\RANO Anti-Virus\RANO Anti-Virus\obj\Debug\RANO_Anti_Virus.Encryption.resources
+C:\Users\PC\Desktop\Anti-Virus\RANO Anti-Virus\RANO Anti-Virus\obj\Debug\RANO_Anti_Virus.Userinfo.resources

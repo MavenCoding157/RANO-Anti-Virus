@@ -39,9 +39,10 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.homecontainer = new System.Windows.Forms.Panel();
+            this.guna2Button6 = new Guna.UI2.WinForms.Guna2Button();
+            this.label9 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.guna2Button7 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button6 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button5 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
@@ -172,9 +173,10 @@
             // homecontainer
             // 
             this.homecontainer.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.homecontainer.Controls.Add(this.guna2Button6);
+            this.homecontainer.Controls.Add(this.label9);
             this.homecontainer.Controls.Add(this.label11);
             this.homecontainer.Controls.Add(this.guna2Button7);
-            this.homecontainer.Controls.Add(this.guna2Button6);
             this.homecontainer.Controls.Add(this.guna2Button5);
             this.homecontainer.Controls.Add(this.guna2Button4);
             this.homecontainer.Controls.Add(this.guna2Button3);
@@ -188,6 +190,35 @@
             this.homecontainer.Name = "homecontainer";
             this.homecontainer.Size = new System.Drawing.Size(208, 466);
             this.homecontainer.TabIndex = 13;
+            // 
+            // guna2Button6
+            // 
+            this.guna2Button6.AutoRoundedCorners = true;
+            this.guna2Button6.BorderRadius = 25;
+            this.guna2Button6.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button6.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button6.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button6.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button6.FillColor = System.Drawing.Color.SpringGreen;
+            this.guna2Button6.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button6.ForeColor = System.Drawing.Color.Black;
+            this.guna2Button6.Location = new System.Drawing.Point(8, 380);
+            this.guna2Button6.Name = "guna2Button6";
+            this.guna2Button6.Size = new System.Drawing.Size(183, 53);
+            this.guna2Button6.TabIndex = 27;
+            this.guna2Button6.Text = "User Info";
+            this.guna2Button6.Click += new System.EventHandler(this.guna2Button6_Click);
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.Black;
+            this.label9.Location = new System.Drawing.Point(46, 344);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(135, 30);
+            this.label9.TabIndex = 26;
+            this.label9.Text = "User: Admin";
             // 
             // label11
             // 
@@ -218,24 +249,6 @@
             this.guna2Button7.Text = "Settings";
             this.guna2Button7.Click += new System.EventHandler(this.guna2Button7_Click);
             // 
-            // guna2Button6
-            // 
-            this.guna2Button6.AutoRoundedCorners = true;
-            this.guna2Button6.BorderRadius = 25;
-            this.guna2Button6.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button6.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button6.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button6.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button6.FillColor = System.Drawing.Color.SpringGreen;
-            this.guna2Button6.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button6.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button6.Location = new System.Drawing.Point(8, 402);
-            this.guna2Button6.Name = "guna2Button6";
-            this.guna2Button6.Size = new System.Drawing.Size(183, 53);
-            this.guna2Button6.TabIndex = 24;
-            this.guna2Button6.Text = "Grey";
-            this.guna2Button6.Click += new System.EventHandler(this.guna2Button6_Click);
-            // 
             // guna2Button5
             // 
             this.guna2Button5.AutoRoundedCorners = true;
@@ -245,11 +258,11 @@
             this.guna2Button5.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.guna2Button5.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.guna2Button5.FillColor = System.Drawing.Color.SpringGreen;
-            this.guna2Button5.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button5.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button5.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button5.Location = new System.Drawing.Point(8, 343);
+            this.guna2Button5.Location = new System.Drawing.Point(102, 284);
             this.guna2Button5.Name = "guna2Button5";
-            this.guna2Button5.Size = new System.Drawing.Size(183, 53);
+            this.guna2Button5.Size = new System.Drawing.Size(95, 53);
             this.guna2Button5.TabIndex = 23;
             this.guna2Button5.Text = "Blue";
             this.guna2Button5.Click += new System.EventHandler(this.guna2Button5_Click);
@@ -263,13 +276,13 @@
             this.guna2Button4.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.guna2Button4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.guna2Button4.FillColor = System.Drawing.Color.SpringGreen;
-            this.guna2Button4.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button4.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button4.ForeColor = System.Drawing.Color.Black;
             this.guna2Button4.Location = new System.Drawing.Point(8, 284);
             this.guna2Button4.Name = "guna2Button4";
-            this.guna2Button4.Size = new System.Drawing.Size(183, 53);
+            this.guna2Button4.Size = new System.Drawing.Size(88, 53);
             this.guna2Button4.TabIndex = 22;
-            this.guna2Button4.Text = "Standard";
+            this.guna2Button4.Text = "Normal";
             this.guna2Button4.Click += new System.EventHandler(this.guna2Button4_Click);
             // 
             // guna2Button3
@@ -355,6 +368,7 @@
             this.notifyIcon1.Icon = ((System.Drawing.Icon)(resources.GetObject("notifyIcon1.Icon")));
             this.notifyIcon1.Text = "notifyIcon1";
             this.notifyIcon1.Visible = true;
+            this.notifyIcon1.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.notifyIcon1_MouseDoubleClick);
             // 
             // label7
             // 
@@ -682,7 +696,6 @@
         private Guna.UI2.WinForms.Guna2Button guna2Button3;
         private Guna.UI2.WinForms.Guna2Button guna2Button4;
         private Guna.UI2.WinForms.Guna2Button guna2Button5;
-        private Guna.UI2.WinForms.Guna2Button guna2Button6;
         private Guna.UI2.WinForms.Guna2Button guna2Button7;
         private Guna.UI2.WinForms.Guna2Button guna2Button8;
         private Guna.UI2.WinForms.Guna2Button guna2Button9;
@@ -697,6 +710,8 @@
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
         private Guna.UI2.WinForms.Guna2Button guna2Button10;
+        private System.Windows.Forms.Label label9;
+        private Guna.UI2.WinForms.Guna2Button guna2Button6;
     }
 }
 

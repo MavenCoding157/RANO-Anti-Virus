@@ -81,9 +81,10 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(642, 22);
+            this.button3.Image = global::RANO_Anti_Virus.Properties.Resources.Square_Cash_app_logo_svg__1_;
+            this.button3.Location = new System.Drawing.Point(656, 22);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(102, 88);
+            this.button3.Size = new System.Drawing.Size(88, 88);
             this.button3.TabIndex = 2;
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
@@ -159,6 +160,7 @@
             this.label2.Size = new System.Drawing.Size(51, 30);
             this.label2.TabIndex = 0;
             this.label2.Text = "Hey";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // pictureBox1
             // 
@@ -181,6 +183,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label4);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Links";
             this.Text = "Links";

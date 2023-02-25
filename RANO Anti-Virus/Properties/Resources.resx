@@ -118,14 +118,8 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Question_Mark.svg" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Question_Mark.svg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Ic_settings_48px.svg" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Ic_settings_48px.svg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="269170" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\269170.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="3dgifmaker28517" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3dgifmaker28517.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="1024px-Simple_Music.svg" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\1024px-Simple_Music.svg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -133,25 +127,37 @@
   <data name="Hamburger_icon.svg" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Hamburger_icon.svg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="download34" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\download34.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Question_Mark.svg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Question_Mark.svg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="269170" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\269170.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="svg+brush+general+illustrate+paint+paint+brush+painting+icon-1320185155836259160" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\svg+brush+general+illustrate+paint+paint+brush+painting+icon-1320185155836259160.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="3dgifmaker28517" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\3dgifmaker28517.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="minimize icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\minimize icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="download34" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\download34.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="button" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="download (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\download (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="download" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\download.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="minimize icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\minimize icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Square_Cash_app_logo.svg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Square_Cash_app_logo.svg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ic_settings_48px.svg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Ic_settings_48px.svg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="download (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\download (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Square_Cash_app_logo.svg (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Square_Cash_app_logo.svg (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

@@ -173,6 +173,26 @@ namespace RANO_Anti_Virus.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Square_Cash_app_logo_svg {
+            get {
+                object obj = ResourceManager.GetObject("Square_Cash_app_logo.svg", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Square_Cash_app_logo_svg__1_ {
+            get {
+                object obj = ResourceManager.GetObject("Square_Cash_app_logo.svg (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap svg_brush_general_illustrate_paint_paint_brush_painting_icon_1320185155836259160 {
             get {
                 object obj = ResourceManager.GetObject("svg+brush+general+illustrate+paint+paint+brush+painting+icon-1320185155836259160", resourceCulture);
