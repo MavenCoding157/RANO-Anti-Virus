@@ -17,6 +17,10 @@ This is very early BETA for this Anti-Virus so if there is not many options or s
 # **VIDEOS**
 https://user-images.githubusercontent.com/117538886/220518500-6dc2ba99-bf15-4e47-8919-a1e9fa0c9592.mp4
 
+# **LEGAL NOTICE**
+
+THIS SOFTWARE IS STILL IN BETA TESTING AND SHOULD NOT BE USED AS YOUR MAIN ANTI-VIRUS. IF YOU GET A VIRUS USING THIS TOOL, WE CANNOT CLAIM RESPONSIBILITY FOR IT.
+
 # **SUB TO MY CHANNEL!!!**
                      
 ==================================================
