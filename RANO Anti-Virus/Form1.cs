@@ -29,7 +29,7 @@ namespace RANO_Anti_Virus
         int movX;
         int movY;
 
-        string CurrentVersion = "0.2";
+        string CurrentVersion = "0.3";
         private ContextMenu m_menu;
 
         //round corner (ddl's)
@@ -299,7 +299,7 @@ namespace RANO_Anti_Virus
             WindowState = FormWindowState.Normal;
         }
 
-        private void browseToolStripMenuItem_Click(object sender, EventArgs e)
+        private void guna2Button11_Click(object sender, EventArgs e)
         {
             using (FileDialog fileDialog = new OpenFileDialog())
             {
