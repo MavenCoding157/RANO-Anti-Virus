@@ -20,6 +20,7 @@ This is very early BETA for this Anti-Virus so if there is not many options or s
 # **LOGIN**
 
 Username = admin
+
 Password = admin
 
 # **VIDEOS**
